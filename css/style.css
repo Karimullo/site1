@@ -1,0 +1,89 @@
+/* Обнуление */
+*,
+*::before,
+*::after{
+   padding: 0;
+   margin: 0;
+   border: 0;
+   box-sizing: border-box;
+}
+html,
+body{
+   height: 100%;
+   background-color: #333;
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+   color: #fff;
+   font-size: 20px;
+}
+.wrapper {
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+}
+.fullscreen {
+   min-height: 100vh;
+   display: flex;
+   background-color: #666;
+   padding: 20px 0;
+}
+.fullscreen_two{
+   background-color: darkblue;
+}
+.fullscreen_bg{
+   background: url(../img/palatka_koster_noch.jpg) center / cover no-repeat fixed;
+}
+.fulscreen__body {
+   width: 100%; /* Для Internet Explorer 11 */
+   /* background-color: chocolate; */
+   flex: 1 1 auto;
+   max-width: 1000px;
+   margin: 0 auto;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 0px 20px;
+}
+.fulscreen__title {
+   font-size: 50px;
+   margin: 0px 0px 20px 0px;
+}
+.fulscreen__text {
+   font-size: 25px;
+   margin: 0px 0px 20px 0px;
+}
+.fulscreen__link {
+   display: inline-block;
+   line-height: 50px;
+   text-transform: uppercase;
+   color: #fff;
+   text-decoration: none;
+   letter-spacing: 3px;
+   background-color: black;
+   align-self: center;
+   padding: 0px 20px;
+}
+.content {
+
+}
+.content__body {
+   max-width: 1000px;
+   margin: 0 auto;
+   padding: 30px 20px;
+}
+.content__body p: :last-child{
+   margin: 0px 0px 0px 0px;
+}
+.content__body p{
+   margin: 0px 0px 20px 0px;
+   line-height: 1.5;
+}
+.footer {
+   background-color: #111;
+   text-align: center;
+}
+.footer__body {
+   max-width: 1000px;
+   margin: 0 auto;
+   padding: 30px 20px;
+}
